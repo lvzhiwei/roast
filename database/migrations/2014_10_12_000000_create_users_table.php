@@ -19,6 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('provider'); //Oauth 服务提供方
+            $table->string('provider_id'); //从第三方 Oauth 获取的用户唯一id
+            $table->text('avatar');
             $table->rememberToken();
             $table->timestamps();
         });

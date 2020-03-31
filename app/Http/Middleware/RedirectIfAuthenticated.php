@@ -19,7 +19,8 @@ class RedirectIfAuthenticated
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
-            return redirect(RouteServiceProvider::HOME);
+//            return redirect(RouteServiceProvider::HOME);
+            return redirect('/'); //跳转路由, 默认为/home, 这里没有home路由, 所以重定向到/
         }
 
         return $next($request);
