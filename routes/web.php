@@ -17,6 +17,6 @@ Route::get('/', 'Web\AppController@getApp')->middleware('auth'); //首页, 必�
 
 Route::get('/login', 'Web\AuthenticationController@getLogin')->name('login')->middleware('guest'); // 登录页面(访客)
 
-Route::get('/auth/{social}', 'Web\AuthenticationController@getSocialRedirect')->middleware('guest'); //某个第三方下的授权页面
+Route::get('/auth/{social}', 'Web\AuthenticationController@getSocialRedirect')->middleware('guest'); //跳转到某个第三方下的授权页面
 
-Route::get('/auth/{social}/callback', 'Web\AuthenticationController@getSocialCallback')->middleware('guest'); // 某个第三方的回调页面
+Route::get('/auth/{social}/callback', 'Web\AuthenticationController@getSocialCallback')->middleware('guest'); // 某个第三方的回调页面(本系统)

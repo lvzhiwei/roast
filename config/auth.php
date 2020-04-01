@@ -42,7 +42,8 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
+//            'driver' => 'token',
+            'driver' => 'passport', //使用passport作为认证方式
             'provider' => 'users',
             'hash' => false,
         ],

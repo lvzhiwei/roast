@@ -60,7 +60,5 @@ class AuthenticationController extends Controller
 
         // 登录成功后将用户重定向到首页
         return redirect('/');
-
-
     }
 }
