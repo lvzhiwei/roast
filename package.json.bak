@@ -10,18 +10,16 @@
         "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
-        "ajv": "^6.5.2",
         "axios": "^0.19",
         "cross-env": "^7.0.2",
-        "es6-promise": "^4.2.4",
-        "foundation-sites": "^6.5.0-rc.2",
-        "jquery": "^3.2",
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
-        "popper.js": "^1.12",
-        "vue": "^2.5.7",
-        "vue-router": "^3.0.1",
-        "vuex": "^3.0.1",
-        "what-input": "^5.1.1"
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0"
+    },
+    "dependencies": {
+        "vue-router": "^3.1.6",
+        "vuex": "^3.1.3"
     }
 }
