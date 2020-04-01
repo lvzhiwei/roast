@@ -37,6 +37,12 @@ if (token) {
     el: '#app'
 });*/
 import Vue from 'vue';
+import router from './routes.js'; //引入路由文件
 
 // 其作用是将 Vue 挂载到 ID 为 app 的页面元素上，同时在准备就绪时可以通过 Vue 调用 Vue Router 和 Vuex。
 new Vue().$mount('#app');
+
+// 告知Vue实例使用刚刚导入的router
+new Vue({
+    router
+}).$mount('#app')
