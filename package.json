@@ -13,7 +13,7 @@
         "ajv": "^6.5.2",
         "axios": "^0.19",
         "cross-env": "^7.0.2",
-        "es6-promise": "^4.2.4",
+        "es6-promise": "^4.2.8",
         "foundation-sites": "^6.5.0-rc.2",
         "jquery": "^3.2",
         "laravel-mix": "^5.0.1",
